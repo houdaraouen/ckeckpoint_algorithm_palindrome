@@ -1,0 +1,34 @@
+ALGORITHM recrusive_palindrome
+//declaration de variable
+VAR
+
+       i:INTEGER;
+       ch!STRING;
+        n: INTEGER=ch.length-1;
+            //declaration du fonction recrusive
+    FUNCTION recrusive_palind(ch: STRING) : BOOLEAN
+    VAR
+        result :true
+    BEGIN
+
+      FOR i FROM 0 TO n STEP step  DO
+    
+        IF (ch[i]<>ch[n]) THEN
+             result:=false
+        ELSE
+            result==recrusive_palind(ch,i+1,n-1)
+           n=n-1
+        END_IF
+
+        END_FOR 
+        RETURN result ;
+  
+    END
+
+
+BEGIN
+write("entrer le mot à tester",ch);
+//appel du fonction
+ch==recrusive_palind(ch)
+    
+END

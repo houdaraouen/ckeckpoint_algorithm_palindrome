@@ -1,0 +1,32 @@
+ALGORITHM Palindrome
+//declaration de variables
+ VAR
+    i: INTEGER;
+    n: INTEGER=ch.lenght-1;
+    palind: BOOLEAN;
+    //declaration du fonction
+    VAR
+ FUNCTION fonction_palindrome(ch:STRING) : BOOLEAN
+
+ BEGIN
+ REPEAT
+ 
+    IF (ch[i]<>ch[n]) THEN
+        palind==false
+        ELSE
+           palind==true
+           n=n-1;
+           i=i+1;
+        
+    END_IF
+    UNTIL (i=n)
+    RETURN value ;
+ END
+BEGIN
+i=0;
+n=n-1;
+write("entrer le mot à tester",ch)
+//appel du fontion
+fonction_palindrome(ch)
+    
+END
